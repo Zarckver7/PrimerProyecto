@@ -1,0 +1,8 @@
+En este proyecto recrearemos el mercado de cajas del juego CS de una manera más simple, tendremos un main donde podremos ejecutar las funciones de las demás clases mediante un while true con diferentes opciones, 
+tambien encontraremos una parte de código que al cerrar el programa generará un documento .csv con todos los datos (saldo inicial, saldo final, gastos, ganancias, profit y lo que se conserve en el inventario),
+en la clase cajasCS se ejecutara todo el proceso de "abrir las cajas", cogiendo desde la api los datos de caja objeto, al abrir la caja se restara 5 a la cartera con la que se empieza, en esta clase también, 
+habrá unos diccionarios que cambiarán los nombres de diferentes atributos de los objetos al español y otro para dar probabilidades a cada cualidad, al abrir la caja nos dara un "arma" de forma aleatoria dependiendo 
+de uno de las probabilidades que hemos creado al principio (probabilidad_rareza) y se le asignara un desgaste aleatorio con la otra probabilidad, al terminar el proceso se imprimirá el nombre del arma, la rareza
+y el desgaste. Por último tenemos la clase de inventario, la cual crea un archivo .json que ira actualizando según abramos cajas, en el archivo se guardara el id que se asigne al arma según se abrán, el nombre,
+la rareza, el desgaste y el valor, el cual se genera haciendo un cálculo dependiendo de la rareza y el desgaste, también podremos vender las armas, o bien por id o todo el inventario, el "dinero" se añadira a la
+cartera y por último podremos sacar por terminal todos los datos de las "armas"
